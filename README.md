@@ -39,3 +39,24 @@ Metrik evaluasi yang digunakan untuk mengukur performa model machine learning ad
 - **Mean Absolute Percentage Error (MAPE)**: Mengukur kesalahan model dalam bentuk persentase dari kesalahan relatif terhadap nilai sebenarnya.
 
 Semakin kecil nilai RMSE, MAE, dan MAPE, semakin baik model dalam memprediksi data sebenarnya. MAPE khususnya berguna untuk menginterpretasikan hasil error dalam bentuk persentase, sehingga mudah dipahami.
+
+
+## Perbandingan dengan Model Rule-Based
+Model rule-based adalah pendekatan tradisional yang menggunakan aturan-aturan yang ditentukan secara eksplisit untuk menetapkan harga apartemen. Aturan-aturan ini biasanya berdasarkan pengetahuan domain dan pengalaman praktis agen properti, seperti:
+
+- Harga dasar per meter persegi berdasarkan lokasi.
+- Penyesuaian harga berdasarkan jumlah luasan apartment (sqf)
+- Pada data Aprtment Daegu diketahui tipe hallway (HallwayType) mempengaruhi median harga,
+
+maka dari itu ditentukan `Size(sqf)` dan `HallwayType` sebagai fitur yang mempengaruhi prediksi harga.
+
+
+### Perbandingan dengan Model Machine Learning
+
+Model machine learning yang dikembangkan dalam proyek ini diharapkan dapat menangkap kompleksitas data dan menghasilkan prediksi yang lebih akurat dibandingkan dengan model rule-based. Model ini menggunakan berbagai fitur yang relevan dan dapat disesuaikan serta ditingkatkan seiring waktu berdasarkan data baru dan tren pasar.
+
+### Hasil Perbandingan
+
+Setelah melakukan pelatihan dan evaluasi model machine learning, hasilnya akan dibandingkan dengan model rule-based menggunakan metrik evaluasi (RMSE, MAE, dan MAPE). Diharapkan model machine learning akan menunjukkan performa yang lebih baik dengan nilai error yang lebih rendah, memberikan prediksi harga apartemen yang lebih akurat dan dapat diandalkan.
+
+Dengan demikian, agen properti dapat membuat keputusan yang lebih tepat dan kompetitif, meningkatkan kepuasan pelanggan dan mengoptimalkan keuntungan.
